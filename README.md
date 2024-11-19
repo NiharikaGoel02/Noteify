@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Noteify - Notes App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Noteify is a simple and intuitive web application that allows users to create, update, and delete notes. Built using the MERN stack (MongoDB, Express, React, Node.js) and styled with Bootstrap, this app offers a modern interface for note-taking.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **User Authentication**: Users can register, log in, and manage their notes securely.
+- **Create Notes**: Add new notes with a title, description, and tag.
+- **Edit Notes**: Update existing notes to modify their content.
+- **Delete Notes**: Remove unwanted notes.
+- **Responsive Design**: Built using Bootstrap for a responsive and user-friendly interface.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React, Bootstrap
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB
+- **Authentication**: JWT (JSON Web Tokens)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation Guide
 
-### `npm test`
+### Prerequisites
+Make sure you have the following installed on your system:
+- Node.js (v14 or higher)
+- MongoDB (or MongoDB Atlas for cloud-based storage)
+- Git
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Steps to Run the Application Locally
 
-### `npm run build`
+1. **Clone the repository**:
+   git clone https://github.com/NiharikaGoel02/Noteify.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install backend dependencies**:
+   Navigate to the backend folder and install dependencies.
+   cd Noteify/backend
+   npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Configure environment variables**:
+   Create a `.env` file in the `backend` directory and add the following variables:
+   MONGO_URI=<your_mongodb_connection_string>
+   JWT_SECRET=<your_jwt_secret_key>
+   PORT=5000
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Run the backend**:
+   npm start
+   This will start the backend server on port 5000 (default).
 
-### `npm run eject`
+5. **Install frontend dependencies**:
+   Now, navigate to the frontend folder and install dependencies.
+   cd ../frontend
+   npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+6. **Run the frontend**:
+   Start the React development server.
+   npm start
+   This will start the frontend server on port 3000 (default).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+7. **Access the application**:
+   Once both the frontend and backend are running, you can access the app by navigating to [http://localhost:3000](http://localhost:3000).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Testing the Application
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Once the application is running:
+1. **Sign Up**: Create a new user account.
+2. **Log In**: Use your credentials to log in and start managing notes.
+3. **Add, Edit, Delete Notes**: Use the app to perform CRUD operations (Create, Read, Update, Delete) on your notes.
